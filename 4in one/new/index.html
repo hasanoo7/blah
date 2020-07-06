@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="layout.css">
+
+</head>
+<body style="background-color: chocolate">
+<div>
+    <ol>
+        <h1 style="font: bold">Some web link</h1>
+        <li>
+            <a href="http://www.facebook.com"target="_blank">go to facebook</a>
+            <img src="facebook.png" alt="welcome"></li>
+        <li><a href="http://google.com"target="_blank">go to google</a>
+        <img src="goolge.png" alt="welcome"></li>
+        <li><a href="http://youtube.com"target="_blank">go to youtube</a>
+        <img src="youtube.jpg" alt="welcome"></li>
+    </ol>
+<div>
+<!--   h${heading$$}*5-->
+    <!--    p${p$$}*5-->
+    <h1>what is website</h1>
+<!--    p${p$$}*5-->
+    <p>"Websites can be used in various fashions: a personal website, a corporate website for a company, a government website, an organization website, etc. Websites can be the work of an individual, a business or other organization, and are typically dedicated to a particular topic or purpose. Any website can contain a"<a href="/wiki/Hyperlink" title="Hyperlink">hyperlink</a> to any other website, so the distinction between individual sites, as perceived by the user, can be blurred.</p>
+    <h>HOW websites works</h>
+    <p2><article id="wikiArticle"><div></div>
+
+        <div><div class="prevnext">
+            <a href="/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website"><i class="icon-arrow-left"></i><span class="label"> Previous </span></a><a href="/en-US/docs/Learn/Getting_started_with_the_web"><i class="icon-arrow-up"></i> Overview: Getting started with the web</a><br>
+        </div></div>
+
+        <div class="summary">
+            <p><em>How the web works</em> provides a simplified view of what happens when you view a webpage in a web browser on your computer or phone.</p>
+        </div>
+
+        <p>This theory is not essential to writing web code in the short term, but before long you'll really start to benefit from understanding what's happening in the background.</p>
+
+        <h2 id="Clients_and_servers">Clients and servers</h2>
+
+        <p>Computers connected to the web are called <strong>clients </strong>and <strong>servers</strong>. A simplified diagram of how they interact might look like this:</p>
+
+        <p><img alt="Two circles representing client and server. An arrow labelled request is going from client to server, and an arrow labelled responses is going from server to client" src="https://mdn.mozillademos.org/files/17297/simple-client-server.png" style="height: 371px; width: 1193px;"></p>
+
+        <ul>
+            <li>Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).</li>
+            <li>Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.</li>
+        </ul>
+
+        <h2 id="The_other_parts_of_the_toolbox">The other parts of the toolbox</h2>
+
+        <p>The client and server we've described above don't tell the whole story. There are many other parts involved, and we'll describe them below.</p>
+
+        <p>For now, let's imagine that the web is a road. On one end of the road is the client, which is like your house. On the other end of the road is the server, which is a shop you want to buy something from.</p>
+
+        <p><img alt="" src="https://mdn.mozillademos.org/files/9749/road.jpg" style="display: block; height: 427px; margin: 0px auto; width: 640px;"></p>
+
+        <p>In addition to the client and the server, we also need to say hello to:</p>
+
+        <ul>
+            <li><strong>Your internet connection</strong>: Allows you to send and receive data on the web. It's basically like the street between your house and the shop.</li>
+            <li><strong>TCP/IP</strong>: Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the web. This is like the transport mechanisms that let you&nbsp;place an order, go to the shop, and buy your goods. In our example, this is like a car&nbsp;or a bike (or however else you might get around).</li>
+            <li><strong>DNS</strong>: Domain Name Servers are like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the website's real address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.</li>
+            <li><strong>HTTP</strong>: Hypertext Transfer Protocol is an application <a href="/en-US/docs/Glossary/Protocol">protocol</a> that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.</li>
+            <li><strong>Component files</strong>: A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:
+                <ul>
+                    <li><strong>Code files</strong>: Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.</li>
+                    <li><strong>Assets</strong>: This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2 id="So_what_happens_exactly">So what happens, exactly?</h2>
+
+        <p>When you type a web address into your browser (for our analogy that's like walking to the shop):</p>
+
+        <ol>
+            <li>The browser goes to the DNS server, and finds the real address of the server that the website lives on (you find the address&nbsp;of the shop).</li>
+            <li>The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.</li>
+            <li>If the server approves the client's request, the server sends the client a "200 OK" message, which means "Of course you can look at that website! Here it is", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives&nbsp;you your goods, and you bring them back to your house).</li>
+            <li>The browser assembles the small chunks into a complete website and displays it to you (the goods arrive at your door — new shiny stuff, awesome!).</li>
+        </ol>
+
+        <h2 id="DNS_explained">DNS explained</h2>
+
+        <p>Real web addresses aren't the nice, memorable strings you type into your address bar to find your favorite websites. They are special numbers that look like this: <code>63.245.215.20</code>.</p>
+
+        <p>This is called an <a href="/en-US/docs/Glossary/IP_Address">IP address</a>, and it represents a unique location on the web. However, it's not very easy to remember, is it? That's why Domain Name Servers were invented. These are special servers that match up a web address you type into your browser (like "mozilla.org") to the website's real (IP) address.</p>
+
+        <p>Websites can be reached directly via their IP addresses. You can find the IP address of a website by typing its domain into a tool like <a class="external" href="https://ipinfo.info/html/ip_checker.php" rel="noopener">IP Checker</a>.</p>
+
+        <h2 id="Packets_explained">Packets explained</h2>
+
+        <p>Earlier&nbsp;we used the term "packets" to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the web, it is sent as thousands of small chunks, so that many different web users can download the same website at the same time. If websites were sent as single big chunks, only one user could download one at a time, which obviously would make the web very inefficient and not much fun to use.</p>
+
+    </article></p2>
+    <h1>The Importance of a Website for Your Business Success</h1>
+    <div class="date-author">
+        <p>
+            <span class="author">Sherman</span>
+            <span class="seperator">-</span> <span class="date">October 4, 2019</span>
+        </p>
+    </div>
+    <div class="post-featured-item">
+        <div class="post-featured-item-inner">
+            <img width="680" height="430" src="https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/importance-of-a-website.jpg" class="attachment-ultimate-conversion-thumbnail-full size-ultimate-conversion-thumbnail-full wp-post-image" alt="&nbsp;importance of a website" srcset="https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/importance-of-a-website.jpg 680w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/importance-of-a-website-300x190.jpg 300w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/importance-of-a-website-650x411.jpg 650w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/importance-of-a-website-440x278.jpg 440w" sizes="(max-width: 680px) 100vw, 680px"> </div>
+    </div>
+    <p><span style="font-size: 14pt;">Most consumers are looking online for information that will help them make smarter purchasing decisions. In fact, according to the eCommerce Foundation, 88% of consumers will research product information before they make a purchase online or in the store. This buying behavior trend emphasizes the&nbsp;<span class="highlight highlightrequired">importance of a website</span>&nbsp;for today’s businesses.</span></p>
+    <p><span style="font-size: 14pt;"><img class="aligncenter size-full wp-image-22701" src="https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research.jpg" alt="" width="1189" height="408" srcset="https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research.jpg 1189w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research-300x103.jpg 300w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research-768x264.jpg 768w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research-1024x351.jpg 1024w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research-1140x391.jpg 1140w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research-650x223.jpg 650w, https://www.lyfemarketing.com/blog/wp-content/uploads/2018/07/online-research-440x151.jpg 440w" sizes="(max-width: 1189px) 100vw, 1189px"></span></p>
+    <p><span style="font-size: 14pt;">If you want your company to be successful in the modern marketplace, you’ve got to have a <a href="https://www.lyfemarketing.com/blog/professional-website-design/" target="_blank" rel="noopener noreferrer">professional website</a>. Your website is the backbone of your business, supporting all of your digital marketing efforts. Below, we’ll discuss the&nbsp;<span class="highlight highlightrequired">importance of a website</span>&nbsp;for your business success and what you need to know about getting started with a professional website for your business.</span></p>
+
+<
+</body>
+</html>
