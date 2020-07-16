@@ -1,0 +1,32 @@
+#header{
+    color: yellow;font-size: 200px;
+}
+p {
+  text-justify: distribute-center-last;
+    color: yellow;
+}
+h1{
+    color: yellow;
+    marker-mid: 30px;
+}h2{
+    color: yellow;
+    marker-mid: 30px;
+}h3{
+    color: yellow;
+    marker-mid: 30px;
+}h4{
+    color: yellow;
+    marker-mid: 30px;
+   }
+h5{
+    color: yellow;
+    marker-mid: 30px;
+   }
+<!--ul>li{$$}*5-->{
+    color: yellow;
+    marker-mid: 30px;
+}
+div{
+    color: red;
+    marker-mid: 30px;
+}
