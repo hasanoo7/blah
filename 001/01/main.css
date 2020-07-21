@@ -30,3 +30,17 @@ div{
     color: red;
     marker-mid: 30px;
 }
+div{
+    /*width: 1000px;*/
+    /*height: 100px;*/
+    border: 2px solid darkred;
+}
+.A{
+    border: 40px darkblue groove;
+}
+.B{
+    border: 40px darkblue double;
+}
+.C{
+    border: 40px darkblue dotted;
+}
