@@ -23,7 +23,7 @@ h5{
     marker-mid: 30px;
    }
 <!--ul>li{$$}*5-->{
-    color: yellow;
+    color: yellow;s
     marker-mid: 30px;
 }
 div{
@@ -31,16 +31,29 @@ div{
     marker-mid: 30px;
 }
 div{
-    /*width: 1000px;*/
-    /*height: 100px;*/
-    border: 2px solid darkred;
+    width: 700px;
+    /*height: 250px;*/
+    border: 2px  solid darkred;
+
 }
 .A{
     border: 40px darkblue groove;
+    border-radius: 100PX;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .B{
     border: 40px darkblue double;
+    border-radius: 100PX;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .C{
     border: 40px darkblue dotted;
+    border-radius: 100PX;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
