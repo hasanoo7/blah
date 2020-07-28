@@ -1,0 +1,47 @@
+html{
+    background-color: #002a80;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #7c8000;
+    border: 6px solid black;
+}
+
+img{
+    display: block;
+   border-radius: 100%;
+    margin: 0 auto;
+    border: 10px ridge #ff0051;
+}
+#primary{
+    color: #002a80;
+}
+#secondery{
+    color: yellow;
+}
+#tin{
+    color: deeppink;
+}
+#char{
+    color: orangered;
+}
+#pch{
+    color: darkgreen;
+}
+#hat{
+    color: black;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p{
+    color: darkred;
+}
