@@ -1,6 +1,9 @@
 #header{
     color: yellow;font-size: 200px;
 }
+body{
+    font: icon;
+}
 p {
   text-justify: distribute-center-last;
     color: yellow;
